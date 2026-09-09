@@ -6,6 +6,7 @@ on:
 
 permissions:
   issues: write
+  pull-requests: write
 
 concurrency:
   group: vibe-free-${{ github.event.pull_request.number }}
