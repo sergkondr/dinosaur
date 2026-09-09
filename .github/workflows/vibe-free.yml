@@ -1,0 +1,21 @@
+name: Vibe-free certification
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited, ready_for_review, converted_to_draft]
+
+permissions:
+  issues: write
+
+concurrency:
+  group: vibe-free-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: sergkondr/vibe-free-certification@v1
+        with:
+          github-token: ${{ github.token }}
