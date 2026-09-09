@@ -3,7 +3,7 @@
 Simple DNS server wannabe. The main goal of this project was to practice working with raw network data and enjoy the process. 
 I chose DNS because it is a simple and clear protocol with an easy-to-understand format.
 
-It works, and I am happy with the result, that means the goal is achieved.
+It works, and I am happy with the result. That means the goal is achieved.
 
 Maybe one day, I will develop this project further.
 
